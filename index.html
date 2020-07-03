@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+      integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q"
+      crossorigin="anonymous"
+    />
+    <title>Etch a Sketch.</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <h2>Etch a sketch</h2>
+      <div id="button-group">
+        <button id="blackColor" autofocus><i class="far fa-circle"></i></button>
+        <button id="randomColor"><i class="fas fa-question"></i></button>
+        <button id="clearButton"><i class="fas fa-redo"></i></button>
+      </div>
+      <div id="resolution-container">
+        <label for="resolution">Resolution</label>
+        <select name="resolution" id="resolution">
+          <option value="x1">32x16</option>
+          <option value="x2">64x32</option>
+          <option value="x3">96x48</option>
+          <option value="x5">160x80</option>
+        </select>
+      </div>
+    </div>
+    <div id="canvas"></div>
+    <p id="description">
+      --Click on canvas to start drawing and click to stop--
+    </p>
+    <script src="script.js"></script>
+  </body>
+</html>

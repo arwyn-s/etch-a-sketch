@@ -1,0 +1,114 @@
+/*
+color palettes:
+
+#faf9f9, #838bbc, #9fa7ab, #7b81b5, #394764
+*/
+:root {
+  --grid-sides: 30px;
+}
+
+html,
+body {
+  max-height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #9fa7ab;
+  font-family: "Dancing Script", cursive;
+}
+
+.navbar {
+  background-color: #394764;
+  color: #faf9f9;
+  margin: 0;
+  margin-bottom: 16px;
+  padding: 0 15px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar label {
+  font-size: 1.4rem;
+}
+.navbar select {
+  font-family: "Dancing Script", cursive;
+  background-color: #394764;
+  border: 0px solid #394764;
+  color: #faf9f9;
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+
+.navbar select:focus {
+  outline: none;
+}
+.navbar h2 {
+  font-weight: 700;
+}
+
+#canvas {
+  max-width: 960px;
+  max-height: 480px;
+  min-width: 960px;
+  min-height: 480px;
+  margin: auto;
+  background-color: #faf9f9;
+  -webkit-box-shadow: 1px 1px 2px 3px rgb(41, 53, 65); /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow: 1px 1px 2px 3px rgb(41, 53, 65); /* Firefox 3.5 - 3.6 */
+  box-shadow: 1px 1px 2px 3px rgb(41, 53, 65);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.pixels {
+  max-width: var(--grid-sides);
+  max-height: var(--grid-sides);
+  width: var(--grid-sides);
+  height: var(--grid-sides);
+  background-color: white;
+}
+.pixels:hover {
+  background-color: #9fa7ab;
+}
+
+#button-group button {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 0px;
+  margin-right: 12px;
+}
+#button-group button:focus {
+    outline: none;
+}
+
+#blackColor:focus, #randomColor:focus, #button-group button:hover{
+    outline: none;
+    box-shadow: 0 0 10px 6px rgba(131, 139, 188);
+}
+button#blackColor {
+  color: white;
+  font-size: 1.3rem;
+  background-color: black;
+}
+
+button#randomColor {
+  color: black;
+  font-size: 1.3rem;
+  background: rgb(255, 127, 63);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 127, 63, 1) 0%,
+    rgba(127, 255, 127, 1) 50%,
+    rgba(63, 127, 255, 1) 100%
+  );
+}
+button#clearButton {
+    color: black;
+    font-size: 1.3rem;
+}
+#description {
+  text-align: center;
+}
